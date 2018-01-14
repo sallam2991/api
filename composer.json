@@ -1,5 +1,10 @@
 {
-    "autoload": {
-        "psr-0": {"app": "api.com/"}
-    }
+
+	"autoload": 
+	{
+     	 "classmap":["core/","modules/","lib/"]
+
+     	
+	}
+
 }

@@ -1,0 +1,25 @@
+.logo{
+	text-align: center;
+	font-size:70px;
+	font-weight: bold;
+	padding-bottom: 30px;
+	padding-top: 10px;
+}
+.primary-box{
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+}
+.default-box{
+	position: relative;
+	margin: 0 auto;
+	width: 70%;
+	padding: 10px;
+	background: #BDBDBD;
+	text-align: left;
+}
+.no-margin{
+	margin-top: 15px;
+	margin-bottom: 0;
+}

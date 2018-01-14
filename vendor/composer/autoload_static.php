@@ -4,22 +4,41 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit9f3f09c8a1fe6a59a0e028a8ee750b64
+class ComposerStaticInit25c329f18e4191416ae7d14120f68a76
 {
-    public static $prefixesPsr0 = array (
-        'a' => 
-        array (
-            'app' => 
-            array (
-                0 => __DIR__ . '/../..' . '/api.com',
-            ),
-        ),
+    public static $classMap = array (
+        'API' => __DIR__ . '/../..' . '/core/API.php',
+        'Controller' => __DIR__ . '/../..' . '/core/Controller.php',
+        'Helper' => __DIR__ . '/../..' . '/core/Helper.php',
+        'Purchase' => __DIR__ . '/../..' . '/modules/models/Purchase.php',
+        'PurchaseController' => __DIR__ . '/../..' . '/modules/controllers/PurchaseController.php',
+        'RipcordHelper' => __DIR__ . '/../..' . '/core/RipcordHelper.php',
+        'Ripcord_BadMethodCallException' => __DIR__ . '/../..' . '/lib/ripcord/ripcord.php',
+        'Ripcord_Client' => __DIR__ . '/../..' . '/lib/ripcord/ripcord_client.php',
+        'Ripcord_Client_Call' => __DIR__ . '/../..' . '/lib/ripcord/ripcord_client.php',
+        'Ripcord_Client_MultiCall' => __DIR__ . '/../..' . '/lib/ripcord/ripcord_client.php',
+        'Ripcord_ConfigurationException' => __DIR__ . '/../..' . '/lib/ripcord/ripcord.php',
+        'Ripcord_Documentor' => __DIR__ . '/../..' . '/lib/ripcord/ripcord_documentor.php',
+        'Ripcord_Documentor_Interface' => __DIR__ . '/../..' . '/lib/ripcord/ripcord_documentor.php',
+        'Ripcord_Documentor_Parser' => __DIR__ . '/../..' . '/lib/ripcord/ripcord_documentor.php',
+        'Ripcord_Documentor_Parser_phpdoc' => __DIR__ . '/../..' . '/lib/ripcord/ripcord_documentor.php',
+        'Ripcord_Exception' => __DIR__ . '/../..' . '/lib/ripcord/ripcord.php',
+        'Ripcord_InvalidArgumentException' => __DIR__ . '/../..' . '/lib/ripcord/ripcord.php',
+        'Ripcord_RemoteException' => __DIR__ . '/../..' . '/lib/ripcord/ripcord.php',
+        'Ripcord_Server' => __DIR__ . '/../..' . '/lib/ripcord/ripcord_server.php',
+        'Ripcord_Transport' => __DIR__ . '/../..' . '/lib/ripcord/ripcord_client.php',
+        'Ripcord_TransportException' => __DIR__ . '/../..' . '/lib/ripcord/ripcord.php',
+        'Ripcord_Transport_CURL' => __DIR__ . '/../..' . '/lib/ripcord/ripcord_client.php',
+        'Ripcord_Transport_Stream' => __DIR__ . '/../..' . '/lib/ripcord/ripcord_client.php',
+        'SiteController' => __DIR__ . '/../..' . '/modules/controllers/SiteController.php',
+        'core\\Run' => __DIR__ . '/../..' . '/core/Run.php',
+        'ripcord' => __DIR__ . '/../..' . '/lib/ripcord/ripcord.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixesPsr0 = ComposerStaticInit9f3f09c8a1fe6a59a0e028a8ee750b64::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit25c329f18e4191416ae7d14120f68a76::$classMap;
 
         }, null, ClassLoader::class);
     }

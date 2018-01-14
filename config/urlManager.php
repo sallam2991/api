@@ -1,6 +1,12 @@
 <?php
-
+/*
+to pass parameter via url attach (query)
+*/
 return [
-	"home" => "/home/index"
+	"info" => "site/info",
+	"api/test/(query)" => 'product/test',
+	"get-user" => "purchase/getUser",
+	"api/get-purchase" => "purchase/GetPurchase",
+	"api/create-purchase" => "purchase/CreatePurchase",
 
 ];
